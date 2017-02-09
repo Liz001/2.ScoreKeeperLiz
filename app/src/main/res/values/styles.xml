@@ -1,0 +1,41 @@
+<resources>
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+        <item name="android:windowFullscreen">true</item>
+
+        <!-- Primary theme color of the app (sets background color of app bar) -->
+        <item name="colorPrimary">#FF9800</item>
+        <!-- Background color of buttons in the app -->
+        <item name="colorButtonNormal">#FF9800</item>
+    </style>
+
+    <style name="Score">
+        <item name="android:textSize">56sp</item>
+        <item name="android:textColor">@color/score</item>
+        <item name="android:gravity">center</item>
+        <item name="android:padding">4dp</item>
+        <item name="android:fontFamily">sans-serif_light</item>
+        <item name="android:layout_marginTop">@dimen/topBottomScore</item>
+        <item name="android:layout_marginBottom">@dimen/topBottomScore</item>
+
+    </style>
+
+
+    <style name="teamText">
+        <item name="android:textColor">@color/teamName</item>
+        <item name="android:textSize">14dp</item>
+        <item name="android:gravity">center</item>
+        <item name="android:padding">4dp</item>
+        <item name="android:fontFamily">sans-serif-medium</item>
+
+    </style>
+
+    <style name="button">
+        <item name="android:layout_marginLeft">@dimen/leftRightButton</item>
+        <item name="android:layout_marginRight">@dimen/leftRightButton</item>
+        <item name="android:layout_marginTop">@dimen/topBottomButton</item>
+        <item name="android:layout_marginBottom">@dimen/topBottomButton</item>
+    </style>
+</resources>
