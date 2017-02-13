@@ -16,16 +16,16 @@
     <ImageView
         android:layout_width="match_parent"
         android:layout_height="match_parent"
+        android:layout_below="@id/banner"
         android:scaleType="center"
-        android:src="@drawable/pageone"
-        android:layout_below="@id/banner"/>
+        android:src="@drawable/pageone" />
 
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:orientation="horizontal"
-        android:layout_below="@id/banner">
+        android:layout_below="@id/banner"
+        android:orientation="horizontal">
 
         <LinearLayout
             style="@style/LinearLayoutPlayer"
@@ -48,8 +48,7 @@
                 android:id="@+id/player_one"
                 style="@style/Score"
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                 />
+                android:layout_height="wrap_content" />
 
             <Button
                 style="@style/buttonTwenty"
