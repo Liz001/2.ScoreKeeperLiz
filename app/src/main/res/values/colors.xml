@@ -3,6 +3,7 @@
     <color name="colorPrimary">#3F51B5</color>
     <color name="colorPrimaryDark">#303F9F</color>
     <color name="colorAccent">#FF4081</color>
-    <color name="teamName">#616161</color>
+    <color name="playerName">#07845F</color>
     <color name="score">#000000</color>
+
 </resources>

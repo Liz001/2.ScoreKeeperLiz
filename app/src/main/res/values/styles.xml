@@ -8,34 +8,85 @@
         <!-- Primary theme color of the app (sets background color of app bar) -->
         <item name="colorPrimary">#FF9800</item>
         <!-- Background color of buttons in the app -->
-        <item name="colorButtonNormal">#FF9800</item>
+        <item name="colorButtonNormal">#FFB70D</item>
     </style>
 
+    <!--Vertical Linear Layout each player-->
+
+    <style name="LinearLayoutPlayer">
+        <item name="android:layout_marginTop">@dimen/top</item>
+
+
+    </style>
+
+
+    <!--Score-->
     <style name="Score">
-        <item name="android:textSize">56sp</item>
+        <item name="android:textSize">@dimen/score_textSize</item>
         <item name="android:textColor">@color/score</item>
         <item name="android:gravity">center</item>
-        <item name="android:padding">4dp</item>
+        <item name="android:padding">@dimen/score_padding</item>
         <item name="android:fontFamily">sans-serif_light</item>
         <item name="android:layout_marginTop">@dimen/topBottomScore</item>
         <item name="android:layout_marginBottom">@dimen/topBottomScore</item>
+        <item name="android:text">@string/score</item>
+
 
     </style>
 
+    <!--EditText-->
 
     <style name="teamText">
-        <item name="android:textColor">@color/teamName</item>
-        <item name="android:textSize">14dp</item>
+        <item name="android:textColor">@color/playerName</item>
+        <item name="android:textSize">@dimen/editText</item>
         <item name="android:gravity">center</item>
-        <item name="android:padding">4dp</item>
+        <item name="android:padding">@dimen/editText_padding</item>
         <item name="android:fontFamily">sans-serif-medium</item>
+        <item name="android:ems">10</item>
+        <item name="android:inputType">text</item>
 
     </style>
 
-    <style name="button">
-        <item name="android:layout_marginLeft">@dimen/leftRightButton</item>
-        <item name="android:layout_marginRight">@dimen/leftRightButton</item>
-        <item name="android:layout_marginTop">@dimen/topBottomButton</item>
-        <item name="android:layout_marginBottom">@dimen/topBottomButton</item>
+
+
+    <!--Button +20-->
+<style name="buttonTwenty">
+    <item name="android:text">@string/twenty_points</item>
+    <item name="android:layout_margin">@dimen/marginButton</item>
+
+</style>
+
+    <!--Button +10-->
+    <style name="buttonTen">
+        <item name="android:text">@string/ten_points</item>
+        <item name="android:layout_margin">@dimen/marginButton</item>
+
     </style>
+
+
+    <!--Button +5-->
+    <style name="buttonFive">
+        <item name="android:text">@string/five_points</item>
+        <item name="android:layout_margin">@dimen/marginButton</item>
+
+    </style>
+
+
+    <!--Button Reset-->
+    <style name="buttonReset">
+        <item name="android:text">@string/reset</item>
+        <item name="android:layout_margin">@dimen/marginResetButton</item>
+        <item name="android:layout_alignParentBottom">true</item>
+        <item name="android:layout_centerHorizontal">true</item>
+
+
+    </style>
+
+    <!--View-->
+    <style name="View">
+        <item name="android:layout_marginTop">@dimen/marginTopView</item>
+        <item name="android:background">@android:color/darker_gray</item>
+
+    </style>
+
 </resources>

@@ -1,3 +1,18 @@
 <resources>
-    <string name="app_name">Score Keeper</string>
+    <string name="app_name">Boy Girl Animal ScoreKeeper</string>
+
+    <!--Score-->
+
+    <string name="score">0</string>
+
+    <!--EditText-->
+    <string name="player1">Player 1</string>
+    <string name="player2">Player 2</string>
+    <string name="player3">Player 3</string>
+
+    <!--Buttons-->
+    <string name="twenty_points">+20 points</string>
+    <string name="ten_points">+10 points</string>
+    <string name="five_points">+5 points</string>
+    <string name="reset">Start new game</string>
 </resources>

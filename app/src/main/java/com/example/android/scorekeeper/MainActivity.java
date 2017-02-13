@@ -14,35 +14,70 @@ import com.example.android.scorekeeper.R;
 import static android.R.id.edit;
 import static android.R.id.input;
 import static com.example.android.scorekeeper.R.color.score;
+import static com.example.android.scorekeeper.R.id.player_one;
+import static com.example.android.scorekeeper.R.id.player_two;
 
 public class MainActivity extends AppCompatActivity {
 
-    Editable editTextContents;
+    EditText edit_player_one;
+    EditText edit_player_two;
+    EditText edit_player_three;
+
     int scorePlayerOne = 0;
     int scorePlayerTwo = 0;
     int scorePlayerThree = 0;
+
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        EditText editPlayerOne = (EditText) findViewById(R.id.edit_player_one);
-        editTextContents = editPlayerOne.getText();
+        edit_player_one = (EditText) findViewById(R.id.edit_player_one);
 
-        EditText editPlayerTwo = (EditText) findViewById(R.id.edit_player_two);
-        editTextContents = editPlayerTwo.getText();
+        edit_player_two = (EditText) findViewById(R.id.edit_player_two);
 
-        EditText editPlayerThree = (EditText) findViewById(R.id.edit_player_three);
-        editTextContents = editPlayerThree.getText();
+        edit_player_three = (EditText) findViewById(R.id.edit_player_three);
 
+
+        if (savedInstanceState != null) {
+            edit_player_one.setText(savedInstanceState.getString("Player 1"));
+            edit_player_two.setText(savedInstanceState.getString("Player 2"));
+            edit_player_three.setText(savedInstanceState.getString("Player 3"));
+
+        }
+    }
+
+
+
+    @Override
+    public void onRestoreInstanceState(Bundle bundle) {
+
+        super.onRestoreInstanceState(bundle);
+
+        scorePlayerOne = bundle.getInt("scorePlayerOne");
+        scorePlayerTwo = bundle.getInt("scorePlayerTwo");
+        scorePlayerThree = bundle.getInt("scorePlayerThree");
+
+        display();
+    }
+
+
+    @Override
+    public void onSaveInstanceState (Bundle bundle){
+        bundle.putInt("scorePlayerOne",scorePlayerOne);
+        bundle.putInt("scorePlayerTwo",scorePlayerTwo);
+        bundle.putInt("scorePlayerThree",scorePlayerThree);
+
+        super.onSaveInstanceState(bundle);
     }
 
     /**
      * Displays the given score for Player 1.
      */
     public void displayForPlayerOne(int score) {
-        TextView scoreView = (TextView) findViewById(R.id.player_one);
+        TextView scoreView = (TextView) findViewById(player_one);
         scoreView.setText(String.valueOf(score));
     }
 
@@ -76,7 +111,7 @@ public class MainActivity extends AppCompatActivity {
      * Displays the given score for Player Two.
      */
     public void displayForPlayerTwo(int score) {
-        TextView scoreView = (TextView) findViewById(R.id.player_two);
+        TextView scoreView = (TextView) findViewById(player_two);
         scoreView.setText(String.valueOf(score));
     }
 
@@ -138,6 +173,25 @@ public class MainActivity extends AppCompatActivity {
         displayForPlayerThree(scorePlayerThree);
     }
 
+
+    /**
+     * Display() onReatoreInstanceState
+     * **/
+
+    private void display(){
+
+        TextView PlayerOne = (TextView) findViewById(R.id.player_one);
+        PlayerOne.setText(String.valueOf(scorePlayerOne));
+
+        TextView PlayerTwo = (TextView) findViewById(R.id.player_two);
+        PlayerTwo.setText(String.valueOf(scorePlayerTwo));
+
+        TextView PlayerThree = (TextView) findViewById(R.id.player_three);
+        PlayerThree.setText(String.valueOf(scorePlayerThree));
+
+
+    }
+
     /**
      * Reset the score
      */
@@ -150,4 +204,6 @@ public class MainActivity extends AppCompatActivity {
         displayForPlayerTwo(scorePlayerTwo);
         displayForPlayerThree(scorePlayerThree);
     }
-}
+    }
+
+

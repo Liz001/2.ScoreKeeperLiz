@@ -1,4 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
+
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/activity_main"
@@ -6,208 +7,168 @@
     android:layout_height="match_parent">
 
     <ImageView
+        android:id="@+id/banner"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:scaleType="fitCenter"
+        android:src="@drawable/boygirlanimals" />
+
+    <ImageView
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:scaleType="center"
-        android:src="@drawable/alphabet"
-        />
+        android:src="@drawable/pageone"
+        android:layout_below="@id/banner"/>
+
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:orientation="horizontal">
+        android:orientation="horizontal"
+        android:layout_below="@id/banner">
 
         <LinearLayout
+            style="@style/LinearLayoutPlayer"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
-            android:layout_marginTop="@dimen/top"
             android:layout_weight="1"
-            android:orientation="vertical"
-            tools:context=".MainActivity">
+            android:orientation="vertical">
 
             <EditText
                 android:id="@+id/edit_player_one"
+                style="@style/teamText"
                 android:layout_width="fill_parent"
                 android:layout_height="wrap_content"
-                android:ems="10"
-                android:hint="Player 1"
-                android:inputType="text">
+                android:hint="@string/player1">
 
             </EditText>
 
-
-            <TextView
-                style="@style/teamText"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text="Player 1" />
 
             <TextView
                 android:id="@+id/player_one"
                 style="@style/Score"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:background="@android:color/white"
-                android:text="0" />
+                 />
 
             <Button
-                style="@style/button"
+                style="@style/buttonTwenty"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_margin="8dp"
-                android:onClick="addTwentyForPlayerOne"
-                android:text="+20 Points" />
+                android:onClick="addTwentyForPlayerOne" />
 
             <Button
-                style="@style/button"
+                style="@style/buttonTen"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_margin="8dp"
-                android:onClick="addTenForPlayerOne"
-                android:text="+10 Points" />
+                android:onClick="addTenForPlayerOne" />
 
             <Button
-                style="@style/button"
+                style="@style/buttonFive"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_margin="8dp"
-                android:onClick="addFiveForPlayerOne"
-                android:text="+5 Points" />
+                android:onClick="addFiveForPlayerOne" />
         </LinearLayout>
 
         <View
+            style="@style/View"
             android:layout_width="1dp"
-            android:layout_height="match_parent"
-            android:layout_marginTop="16dp"
-            android:background="@android:color/darker_gray" />
+            android:layout_height="match_parent" />
 
         <LinearLayout
+            style="@style/LinearLayoutPlayer"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
-            android:layout_marginTop="@dimen/top"
             android:layout_weight="1"
             android:orientation="vertical">
 
             <EditText
                 android:id="@+id/edit_player_two"
+                style="@style/teamText"
                 android:layout_width="fill_parent"
                 android:layout_height="wrap_content"
-                android:ems="10"
-                android:hint="Player 2"
-                android:inputType="text">
+                android:hint="@string/player2">
 
             </EditText>
 
-            <TextView
-                style="@style/teamText"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text="Player 2" />
 
             <TextView
                 android:id="@+id/player_two"
                 style="@style/Score"
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text="0" />
+                android:layout_height="wrap_content" />
 
             <Button
-                style="@style/button"
+                style="@style/buttonTwenty"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_margin="8dp"
-                android:onClick="addTwentyForPlayerTwo"
-                android:text="+20 Points" />
+                android:onClick="addTwentyForPlayerTwo" />
 
             <Button
-                style="@style/button"
+                style="@style/buttonTen"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_margin="8dp"
-                android:onClick="addTenForPlayerTwo"
-                android:text="+10 Points" />
+                android:onClick="addTenForPlayerTwo" />
 
             <Button
-                style="@style/button"
+                style="@style/buttonFive"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_margin="8dp"
-                android:onClick="addFiveForPlayerTwo"
-                android:text="+5 Points" />
+                android:onClick="addFiveForPlayerTwo" />
         </LinearLayout>
 
         <View
+            style="@style/View"
             android:layout_width="1dp"
-            android:layout_height="match_parent"
-            android:layout_marginTop="16dp"
-            android:background="@android:color/darker_gray" />
+            android:layout_height="match_parent" />
 
         <LinearLayout
+            style="@style/LinearLayoutPlayer"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
-            android:layout_marginTop="@dimen/top"
             android:layout_weight="1"
-            android:orientation="vertical"
-            tools:context=".MainActivity">
+            android:orientation="vertical">
 
             <EditText
                 android:id="@+id/edit_player_three"
+                style="@style/teamText"
                 android:layout_width="fill_parent"
                 android:layout_height="wrap_content"
-                android:ems="10"
-                android:hint="Player 3"
-                android:inputType="text">
+                android:hint="@string/player3">
 
             </EditText>
 
 
             <TextView
-                style="@style/teamText"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text="Player 3" />
-
-            <TextView
                 android:id="@+id/player_three"
                 style="@style/Score"
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:background="@android:color/white"
-                android:text="0" />
+                android:layout_height="wrap_content" />
 
             <Button
-                style="@style/button"
+                style="@style/buttonTwenty"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_margin="8dp"
-                android:onClick="addTwentyForPlayerThree"
-                android:text="+20 Points" />
+                android:onClick="addTwentyForPlayerThree" />
 
             <Button
-                style="@style/button"
+                style="@style/buttonTen"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_margin="8dp"
-                android:onClick="addTenForPlayerThree"
-                android:text="+10 Points" />
+                android:onClick="addTenForPlayerThree" />
 
             <Button
-                style="@style/button"
+                style="@style/buttonFive"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_margin="8dp"
-                android:onClick="addFiveForPlayerThree"
-                android:text="+5 Points" />
+                android:onClick="addFiveForPlayerThree" />
         </LinearLayout>
 
     </LinearLayout>
 
     <Button
+        style="@style/buttonReset"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignParentBottom="true"
-        android:layout_centerHorizontal="true"
-        android:layout_margin="32dp"
-        android:onClick="resetScore"
-        android:text="Reset" />
+        android:onClick="resetScore" />
 </RelativeLayout>
