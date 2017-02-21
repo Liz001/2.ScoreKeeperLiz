@@ -1,0 +1,176 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:id="@+id/activity_main"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/banner"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:scaleType="fitCenter"
+            android:src="@drawable/boygirlanimals" />
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@id/banner"
+            android:scaleType="center"
+            android:src="@drawable/pageone" />
+
+
+        <LinearLayout
+            android:id="@+id/horizontal_ll"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/banner"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                style="@style/LinearLayoutPlayer"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <EditText
+                    android:id="@+id/edit_player_one"
+                    style="@style/teamText"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/player1">
+
+                </EditText>
+
+
+                <TextView
+                    android:id="@+id/player_one"
+                    style="@style/Score"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+
+                <Button
+                    style="@style/buttonTwenty"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:onClick="addTwentyForPlayerOne" />
+
+                <Button
+                    style="@style/buttonTen"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:onClick="addTenForPlayerOne" />
+
+                <Button
+                    style="@style/buttonFive"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:onClick="addFiveForPlayerOne" />
+            </LinearLayout>
+
+            <View
+                style="@style/View"
+                android:layout_width="1dp"
+                android:layout_height="match_parent" />
+
+            <LinearLayout
+                style="@style/LinearLayoutPlayer"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <EditText
+                    android:id="@+id/edit_player_two"
+                    style="@style/teamText"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/player2">
+
+                </EditText>
+
+
+                <TextView
+                    android:id="@+id/player_two"
+                    style="@style/Score"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+
+                <Button
+                    style="@style/buttonTwenty"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:onClick="addTwentyForPlayerTwo" />
+
+                <Button
+                    style="@style/buttonTen"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:onClick="addTenForPlayerTwo" />
+
+                <Button
+                    android:id="@+id/fivepoints_ptwo"
+                    style="@style/buttonFive"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:onClick="addFiveForPlayerTwo" />
+            </LinearLayout>
+
+            <View
+                style="@style/View"
+                android:layout_width="1dp"
+                android:layout_height="match_parent" />
+
+            <LinearLayout
+                style="@style/LinearLayoutPlayer"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <EditText
+                    android:id="@+id/edit_player_three"
+                    style="@style/teamText"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/player3">
+
+                </EditText>
+
+
+                <TextView
+                    android:id="@+id/player_three"
+                    style="@style/Score"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+
+                <Button
+                    style="@style/buttonTwenty"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:onClick="addTwentyForPlayerThree" />
+
+                <Button
+                    style="@style/buttonTen"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:onClick="addTenForPlayerThree" />
+
+                <Button
+                    style="@style/buttonFive"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:onClick="addFiveForPlayerThree" />
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <Button
+            style="@style/buttonReset"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="resetScore"
+            android:layout_below="@id/fivepoints_ptwo"/>
+    </RelativeLayout>

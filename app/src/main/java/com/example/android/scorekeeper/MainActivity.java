@@ -77,7 +77,7 @@ public class MainActivity extends AppCompatActivity {
      * Displays the given score for Player 1.
      */
     public void displayForPlayerOne(int score) {
-        TextView scoreView = (TextView) findViewById(player_one);
+        TextView scoreView = (TextView) findViewById(R.id.player_one);
         scoreView.setText(String.valueOf(score));
     }
 
@@ -111,7 +111,7 @@ public class MainActivity extends AppCompatActivity {
      * Displays the given score for Player Two.
      */
     public void displayForPlayerTwo(int score) {
-        TextView scoreView = (TextView) findViewById(player_two);
+        TextView scoreView = (TextView) findViewById(R.id.player_two);
         scoreView.setText(String.valueOf(score));
     }
 
