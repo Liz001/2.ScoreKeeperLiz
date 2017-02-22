@@ -171,6 +171,5 @@
             style="@style/buttonReset"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:onClick="resetScore"
-            android:layout_below="@id/fivepoints_ptwo"/>
+            android:onClick="resetScore"/>
     </RelativeLayout>
