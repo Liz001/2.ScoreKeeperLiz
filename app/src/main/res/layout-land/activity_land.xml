@@ -37,7 +37,7 @@
 
                 <EditText
                     android:id="@+id/edit_player_one"
-                    style="@style/teamText"
+                    style="@style/teamTextLandscape"
                     android:layout_width="fill_parent"
                     android:layout_height="wrap_content"
                     android:hint="@string/player1">
@@ -47,7 +47,7 @@
 
                 <TextView
                     android:id="@+id/player_one"
-                    style="@style/Score"
+                    style="@style/ScoreLandscape"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content" />
 
@@ -84,7 +84,7 @@
 
                 <EditText
                     android:id="@+id/edit_player_two"
-                    style="@style/teamText"
+                    style="@style/teamTextLandscape"
                     android:layout_width="fill_parent"
                     android:layout_height="wrap_content"
                     android:hint="@string/player2">
@@ -94,7 +94,7 @@
 
                 <TextView
                     android:id="@+id/player_two"
-                    style="@style/Score"
+                    style="@style/ScoreLandscape"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content" />
 
@@ -132,7 +132,7 @@
 
                 <EditText
                     android:id="@+id/edit_player_three"
-                    style="@style/teamText"
+                    style="@style/teamTextLandscape"
                     android:layout_width="fill_parent"
                     android:layout_height="wrap_content"
                     android:hint="@string/player3">
@@ -142,7 +142,7 @@
 
                 <TextView
                     android:id="@+id/player_three"
-                    style="@style/Score"
+                    style="@style/ScoreLandscape"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content" />
 
@@ -171,5 +171,6 @@
             style="@style/buttonReset"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:onClick="resetScore"/>
+            android:onClick="resetScore"
+            />
     </RelativeLayout>

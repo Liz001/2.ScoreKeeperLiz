@@ -15,15 +15,34 @@
     <dimen name="top">16dp</dimen>
     <dimen name="score_textSize">56sp</dimen>
 
+    <!--Score Landscape-->
+
+    <dimen name="topBottomScoreLandscape">4dp</dimen>
+    <dimen name="leftRightButtonLandscape">24dp</dimen>
+    <dimen name="topBottomButtonLandscape">4dp</dimen>
+    <dimen name="score_paddingLandscape">4dp</dimen>
+    <dimen name="topLandscape">8dp</dimen>
+    <dimen name="score_textSizeLandscape">20sp</dimen>
 
     <!-- EditText-->
     <dimen name="editText">26sp</dimen>
     <dimen name="editText_padding">4dp</dimen>
 
+    <!-- EditText Landscape-->
+    <dimen name="editTextLandscape">18sp</dimen>
+    <dimen name="editText_paddingLandscape">4dp</dimen>
+
     <!--Button-->
     <dimen name="marginButton">8dp</dimen>
 
     <dimen name="marginResetButton">32dp</dimen>
+
+
+    <!--Button Landscape-->
+    <dimen name="marginButtonLanscape">8dp</dimen>
+
+    <dimen name="marginResetButtonLandscape">32dp</dimen>
+
 
     <!--View-->
     <dimen name="marginTopView">16dp</dimen>

@@ -34,9 +34,37 @@
 
     </style>
 
+
+    <!--Score Landscape-->
+    <style name="ScoreLandscape">
+        <item name="android:textSize">@dimen/score_textSizeLandscape</item>
+        <item name="android:textColor">@color/score</item>
+        <item name="android:gravity">center</item>
+        <item name="android:padding">@dimen/score_paddingLandscape</item>
+        <item name="android:fontFamily">sans-serif_light</item>
+        <item name="android:layout_marginTop">@dimen/topBottomScoreLandscape</item>
+        <item name="android:layout_marginBottom">@dimen/topBottomScoreLandscape</item>
+        <item name="android:text">@string/score</item>
+
+
+    </style>
+
     <!--EditText-->
 
     <style name="teamText">
+        <item name="android:textColor">@color/playerName</item>
+        <item name="android:textSize">@dimen/editTextLandscape</item>
+        <item name="android:gravity">center</item>
+        <item name="android:padding">@dimen/editText_paddingLandscape</item>
+        <item name="android:fontFamily">sans-serif-medium</item>
+        <item name="android:ems">10</item>
+        <item name="android:inputType">text</item>
+
+    </style>
+
+    <!--EditText Landscape-->
+
+    <style name="teamTextLandscape">
         <item name="android:textColor">@color/playerName</item>
         <item name="android:textSize">@dimen/editText</item>
         <item name="android:gravity">center</item>
@@ -46,8 +74,6 @@
         <item name="android:inputType">text</item>
 
     </style>
-
-
 
     <!--Button +20-->
 <style name="buttonTwenty">
@@ -70,6 +96,32 @@
         <item name="android:layout_margin">@dimen/marginButton</item>
 
     </style>
+
+
+
+    <!--Button +20 Landscape-->
+    <style name="buttonTwentyLandscape">
+        <item name="android:text">@string/twenty_points</item>
+        <item name="android:layout_margin">@dimen/marginButton</item>
+
+    </style>
+
+    <!--Button +10 Landscape-->
+    <style name="buttonTenLandscape">
+        <item name="android:text">@string/ten_points</item>
+        <item name="android:layout_margin">@dimen/marginButton</item>
+
+    </style>
+
+
+    <!--Button +5 Landscape-->
+    <style name="buttonFiveLandscape">
+        <item name="android:text">@string/five_points</item>
+        <item name="android:layout_margin">@dimen/marginButton</item>
+
+    </style>
+
+
 
 
     <!--Button Reset-->
